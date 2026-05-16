@@ -523,7 +523,7 @@
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
-    cursor: pointer;
+    cursor: default;
   }
   .project-card::after {
     content: '';
@@ -1265,7 +1265,7 @@
   <div class="projects-grid">
 
     <!-- Featured Project 1 -->
-    <div class="project-card featured reveal">
+    <div class="project-card featured reveal" onclick="window.open('https://zad-red.vercel.app/','_blank')" style="cursor:pointer;">
       <div>
         <div class="project-num">01</div>
         <div class="project-badge">Featured</div>
@@ -1276,7 +1276,7 @@
         <div class="project-tech">
           <span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>Vercel</span>
         </div>
-        <a href="https://zad-red.vercel.app/" target="_blank" class="project-link">View Live Site →</a>
+        <div class="project-link">View Live Site →</div>
       </div>
       <div class="project-visual">
         <div class="project-visual-code">ZAD CAFE
@@ -1296,7 +1296,7 @@ Handcrafted with love ♥
     </div>
 
     <!-- Project 2 -->
-    <div class="project-card reveal">
+    <a href="https://hemen-menu.vercel.app/" target="_blank" class="project-card reveal" style="text-decoration:none; color:inherit; display:block;">
       <div class="project-num">02</div>
       <div class="project-badge" style="background: rgba(7,193,96,0.1); border-color: rgba(7,193,96,0.3); color: var(--green);">Live</div>
       <div class="project-title">Hemen Butchery & Kitfo Menu</div>
@@ -1306,11 +1306,11 @@ Handcrafted with love ♥
       <div class="project-tech">
         <span>React</span><span>Next.js</span><span>Tailwind CSS</span><span>Vercel</span>
       </div>
-      <a href="https://hemen-menu.vercel.app/" target="_blank" class="project-link">View Live Site →</a>
-    </div>
+      <div class="project-link">View Live Site →</div>
+    </a>
 
     <!-- Project 3 -->
-    <div class="project-card reveal">
+    <a href="https://tena-telemedicine.vercel.app/" target="_blank" class="project-card reveal" style="text-decoration:none; color:inherit; display:block;">
       <div class="project-num">03</div>
       <div class="project-badge" style="background: rgba(7,193,96,0.1); border-color: rgba(7,193,96,0.3); color: var(--green);">Live</div>
       <div class="project-title">Tena Telemedicine Platform</div>
@@ -1320,8 +1320,8 @@ Handcrafted with love ♥
       <div class="project-tech">
         <span>React</span><span>Next.js</span><span>Node.js</span><span>Tailwind CSS</span><span>Vercel</span>
       </div>
-      <a href="https://tena-telemedicine.vercel.app/" target="_blank" class="project-link">View Live Site →</a>
-    </div>
+      <div class="project-link">View Live Site →</div>
+    </a>
 
   </div>
 </section>
