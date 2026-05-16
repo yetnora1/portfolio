@@ -532,6 +532,7 @@
     background: linear-gradient(135deg, rgba(212,168,83,0.04), transparent);
     opacity: 0;
     transition: opacity 0.3s;
+    pointer-events: none;
   }
   .project-card:hover { border-color: rgba(212,168,83,0.4); transform: translateY(-4px); }
   .project-card:hover::after { opacity: 1; }
@@ -608,6 +609,8 @@
     transition: all 0.3s;
     box-shadow: 0 2px 8px rgba(7,193,96,0.3);
     cursor: pointer;
+    position: relative;
+    z-index: 10;
   }
   .project-link:hover { 
     background: var(--green-hover);
